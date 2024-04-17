@@ -14,7 +14,7 @@
             }
         }
         if(flag==true){
-            window.location.href='./home.html'
+            window.location.href='/HTML/Home.html'
         }else{
             alert("Invalid Username or Incorrect Password")
             document.getElementById("username").style.border="2px red solid"
@@ -77,7 +77,7 @@
         
         //Final Validation
         if((EM_flag==true)&&(PH_flag==true)&&(Pass_flag==true)) {
-            window.location.href = "./index.html";
+            window.location.href = "/index.html";
         } else {
             alert("Check the given Phone Number is valid\nCheck the given Email Id is Valid\nPassword Must be :\n8 character length\nAtleast one Uppercase and one Lowercase\nMust contain one Numeric value and Special symbols.");
         }
@@ -88,7 +88,7 @@
     function phone(){
         var PH= document.getElementById("phone_no").value
         if((PH>=6000000000)&&(PH<=9999999999)){                                   //multiple condition given using "&&"
-            window.location.href = "./Verify_OTP.html";
+            window.location.href = "/HTML/Verify_OTP.html";
         }
         else{
             alert("Invalid Number")
@@ -127,7 +127,7 @@
         if ((P_Length >= 8) && (P_Length <= 16) && (P_Upper >= 1) && (P_Lower >= 1) && (P_Number >= 1) && (P_Special >= 1)) {
             if (Pass == C_Pass) {
                 alert("Password Updated Succefully")
-                window.location.href = "./index.html";
+                window.location.href = "/index.html";
             }
         }
 }
